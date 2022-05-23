@@ -11,6 +11,7 @@
     <script type="text/javascript" src="<?php echo base_url() . 'assets/js/jquery.js'; ?>"></script>
     <script type="text/javascript" src="<?php echo base_url() . 'assets/datatable/jquery.dataTables.js'; ?>"></script>
     <script type="text/javascript" src="<?php echo base_url() . 'assets/datatable/datatables.js'; ?>"></script>
+    
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<?php echo base_url() . 'admin/logout'; ?>"><span class="glyphicon glyphicon-logout"></span> Logout</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" datatoggle="dropdown" role="button" aria-haspopup="true" ariaexpanded="false"><?php echo "Halo, <b>" . $this->session->userdata('nama'); ?></b> <span class="caret"></span></a>
+                        <a href="<?php echo base_url() . 'admin/ganti_password'; ?>" class="dropdown-toggle" datatoggle="dropdown" role="button" aria-haspopup="true" ariaexpanded="false"><?php echo "Halo, <b>" . $this->session->userdata('nama'); ?></b> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="<?php echo base_url() . 'admin/ganti_password' ?>"><i class="glyphicon glyphiconlock"></i> Ganti Password</a>
