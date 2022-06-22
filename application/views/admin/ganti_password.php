@@ -3,14 +3,14 @@
 </div>
 <div class="row">
     <div class="col-md-6-offset-3">
-        <?php 
-            if(isset($_GET['pesan'])){
-                if($_GET['pesan']== 'berhasil'){
-                    echo "<div class='alert alert-success'>Password berhasil di ganti.</div>";
-                }
+        <?php
+        if (isset($_GET['pesan'])) {
+            if ($_GET['pesan'] == 'berhasil') {
+                echo "<div class='alert alert-success'>Password berhasil di ganti.</div>";
             }
+        }
         ?>
-        <form action="<?php echo base_url(). 'admin/ganti_pasword_act' ?>" method="post">
+        <form action="<?php echo base_url() . 'admin/ganti_password_act' ?>" method="post">
             <div class="form-group">
                 <label>Password Baru</label>
                 <input type="password" class="form-control" name="pass_baru">
